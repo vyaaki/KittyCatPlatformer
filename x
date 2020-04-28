@@ -1,0 +1,18 @@
+Add KittyHead animation to scene
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+#
+# On branch master
+# Your branch is up to date with 'origin/master'.
+#
+# Changes to be committed:
+#	new file:   Assets/Animation.meta
+#	new file:   Assets/Animation/KittyHead.anim
+#	new file:   Assets/Animation/KittyHead.anim.meta
+#	new file:   Assets/Animation/KittyHeadAnimation_0.controller
+#	new file:   Assets/Animation/KittyHeadAnimation_0.controller.meta
+#	modified:   Assets/Scenes/SampleScene.unity
+#	new file:   Assets/Sprites.meta
+#	new file:   Assets/Sprites/KittyHeadAnimation.psd
+#	new file:   Assets/Sprites/KittyHeadAnimation.psd.meta
+#
