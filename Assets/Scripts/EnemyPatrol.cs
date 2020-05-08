@@ -18,4 +18,6 @@ public class EnemyPatrol : MonoBehaviour
             transform.Rotate(new Vector2(0, -180));
         }
     }
+
+
 }

@@ -11,7 +11,10 @@ public class CameraFollow : MonoBehaviour
     private Vector3 curVelocity = Vector3.zero;
     void Update()
     {
-        Vector3 desiredPosition = target.position + offset;
-        transform.position = Vector3.SmoothDamp(transform.position, desiredPosition, ref curVelocity, smoothTime);
+        if (target)
+        {
+            Vector3 desiredPosition = target.position + offset;
+            transform.position = Vector3.SmoothDamp(transform.position, desiredPosition, ref curVelocity, smoothTime);
+        }
     }
 }

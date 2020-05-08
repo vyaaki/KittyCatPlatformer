@@ -26,4 +26,15 @@ public class PlayerController2D : MonoBehaviour
         jump = false;
     }
 
+    private void OnCollisionEnter2D(Collision2D other)
+    {
+
+        if (other.gameObject.tag == UnityConstants.Tags.Enemies)
+        {
+            GameOverMenu.Instance.showGameOverMenu();
+            GameObject.Destroy(gameObject);
+        }
+    }
+
+
 }
