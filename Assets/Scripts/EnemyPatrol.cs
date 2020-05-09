@@ -8,7 +8,7 @@ public class EnemyPatrol : MonoBehaviour
     public float speed = 5f;
     private bool movingRight = true;
     
-    void Update()
+    void FixedUpdate()
     {
         transform.Translate(Vector2.right * speed * Time.deltaTime);
 
