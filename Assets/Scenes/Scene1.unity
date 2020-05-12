@@ -3135,10 +3135,10 @@ PrefabInstance:
       propertyPath: m_IsTrigger
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5524124655019659614, guid: 0955c5af7b5ac164fb2b4dde26f9fdcc,
+    - target: {fileID: 5524124655054903744, guid: 0955c5af7b5ac164fb2b4dde26f9fdcc,
         type: 3}
-      propertyPath: m_Size.x
-      value: 1.08
+      propertyPath: m_LocalPosition.x
+      value: 0.122
       objectReference: {fileID: 0}
     - target: {fileID: 5524124655054903747, guid: 0955c5af7b5ac164fb2b4dde26f9fdcc,
         type: 3}
