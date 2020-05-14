@@ -29,7 +29,7 @@ public class PlayerController2D : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D other)
     {
 
-        if (other.gameObject.tag == UnityConstants.Tags.Enemies)
+        if (other.gameObject.tag == UnityConstants.Tags.Enemies || other.gameObject.tag == UnityConstants.Tags.DieZone)
         {
             GameOverMenu.Instance.showGameOverMenu();
             GameObject.Destroy(gameObject);

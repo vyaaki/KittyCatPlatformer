@@ -35,6 +35,8 @@ namespace UnityConstants {
         
         public const string PlayerKitty = "PlayerKitty";
         
+        public const string DieZone = "DieZone";
+        
         private Tags() {
         }
     }

@@ -794,7 +794,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 1.9503593
+  orthographic size: 3
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -1388,7 +1388,7 @@ GameObject:
   - component: {fileID: 798735923}
   m_Layer: 2
   m_Name: DieZone
-  m_TagString: Untagged
+  m_TagString: DieZone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1403,7 +1403,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -3128,11 +3128,6 @@ PrefabInstance:
     - target: {fileID: 5524124655019659608, guid: 0955c5af7b5ac164fb2b4dde26f9fdcc,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5524124655019659614, guid: 0955c5af7b5ac164fb2b4dde26f9fdcc,
-        type: 3}
-      propertyPath: m_IsTrigger
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5524124655054903744, guid: 0955c5af7b5ac164fb2b4dde26f9fdcc,
