@@ -1,23 +1,17 @@
-﻿using UnityEngine;
+﻿using UnityConstants;
+using UnityEngine;
 
 public class PlayerController2D : MonoBehaviour
 {
-    public float speed = 20.0f;
     public CharacterController2D controller;
-    float moveX = 0f;
-    bool jump = false;
-    void Start()
-    {
+    private bool jump;
+    private float moveX;
+    public float speed = 20.0f;
 
-    }
-
-    void Update()
+    private void Update()
     {
         moveX = Input.GetAxis("Horizontal") * speed;
-        if (Input.GetButtonDown("Jump"))
-        {
-            jump = true;
-        }
+        if (Input.GetButtonDown("Jump")) jump = true;
     }
 
     private void FixedUpdate()
@@ -28,13 +22,10 @@ public class PlayerController2D : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D other)
     {
-
-        if (other.gameObject.tag == UnityConstants.Tags.Enemies || other.gameObject.tag == UnityConstants.Tags.DieZone)
+        if (other.gameObject.CompareTag(Tags.Enemies) || other.gameObject.CompareTag(Tags.DieZone))
         {
             GameOverMenu.Instance.showGameOverMenu();
-            GameObject.Destroy(gameObject);
+            Destroy(gameObject);
         }
     }
-
-
 }

@@ -1,22 +1,22 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class GameOverMenu : MonoBehaviour
 {
-    public static GameOverMenu Instance { get; private set; }
     public GameObject gameOverPanel;
-    void Start()
+    public static GameOverMenu Instance { get; private set; }
+
+    private void Start()
     {
-        if(Instance == null)
-        {
+        if (Instance == null)
             Instance = this;
-        }
         else
-        {
-            GameObject.Destroy(gameObject);
-        }
+            Destroy(gameObject);
+    }
+
+    private void Update()
+    {
+        if (gameOverPanel.activeInHierarchy && Input.GetKeyDown(KeyCode.Return)) RestartGame();
     }
 
     public void showGameOverMenu()
