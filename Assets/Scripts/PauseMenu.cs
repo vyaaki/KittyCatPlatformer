@@ -1,22 +1,18 @@
-﻿using System;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class PauseMenu : MonoBehaviour
 {
-    private bool isPaused = true;
+    private bool isPaused;
     public GameObject pauseMenu;
-    void Update()
+
+    private void Update()
     {
         if (Input.GetButtonDown("Cancel"))
         {
             if (isPaused)
-            {
                 Resume();
-            }
             else
-            {
                 Pause();
-            }
         }
     }
 
@@ -25,7 +21,6 @@ public class PauseMenu : MonoBehaviour
         Time.timeScale = 0f;
         isPaused = true;
         pauseMenu.SetActive(true);
-
     }
 
     public void Resume()
