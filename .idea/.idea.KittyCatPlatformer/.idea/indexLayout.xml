@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelUserStore">
+    <attachedFolders />
+    <explicitIncludes>
+      <Path>Library/PackageCache/com.coffee.git-dependency-resolver@693ee01bd5afa0adb697fb435261dc866a883ad3</Path>
+      <Path>Library/PackageCache/com.coffee.upm-git-extension@aa9f6ea79913e7e2749edea528c42f2f700ac401</Path>
+      <Path>Library/PackageCache/com.dogfuntom.unityconstantsgenerator@934dbf96e821a46d7c204b88b669256ed4df12d2</Path>
+      <Path>Library/PackageCache/com.unity.ads@2.0.8</Path>
+      <Path>Library/PackageCache/com.unity.analytics@3.2.3</Path>
+      <Path>Library/PackageCache/com.unity.collab-proxy@1.2.15</Path>
+      <Path>Library/PackageCache/com.unity.package-manager-ui@2.0.8</Path>
+      <Path>Library/PackageCache/com.unity.purchasing@2.0.3</Path>
+      <Path>Library/PackageCache/com.unity.textmeshpro@1.4.1</Path>
+      <Path>Packages</Path>
+      <Path>ProjectSettings</Path>
+    </explicitIncludes>
+    <explicitExcludes>
+      <Path>.git</Path>
+      <Path>.idea</Path>
+      <Path>.vs</Path>
+      <Path>Library</Path>
+      <Path>Logs</Path>
+      <Path>Temp</Path>
+      <Path>obj</Path>
+    </explicitExcludes>
+  </component>
+</project>
