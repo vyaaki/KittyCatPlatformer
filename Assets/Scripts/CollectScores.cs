@@ -8,12 +8,7 @@ public class CollectScores : MonoBehaviour
     public void OnTriggerEnter2D(Collider2D collision)
     {
         collectSound.Play();
-        UpdateScore.ScoreCounter += ScoreValue;
+        PlayerStatistic.Source().IncreaseScore(ScoreValue);
         Destroy(gameObject);
-    }
-
-    private void Awake()
-    {
-        UpdateScore.ScoreCounter = 0;
     }
 }
