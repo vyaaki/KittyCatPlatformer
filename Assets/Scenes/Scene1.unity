@@ -338,12 +338,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!82 &562284834 stripped
-AudioSource:
-  m_CorrespondingSourceObject: {fileID: 3216164828838925389, guid: d5e0f2b029910f04db02990cb0b32692,
-    type: 3}
-  m_PrefabInstance: {fileID: 3216164828327402863}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &751664838
 GameObject:
   m_ObjectHideFlags: 0
@@ -505,7 +499,7 @@ PrefabInstance:
         type: 3}
       propertyPath: collectSound
       value: 
-      objectReference: {fileID: 562284834}
+      objectReference: {fileID: 3216164828327402864}
     - target: {fileID: 8628065515637349853, guid: d5ae6c76941ce6042870d6842b3b1338,
         type: 3}
       propertyPath: m_Name
@@ -579,7 +573,7 @@ PrefabInstance:
         type: 3}
       propertyPath: collectSound
       value: 
-      objectReference: {fileID: 562284834}
+      objectReference: {fileID: 3216164828327402864}
     - target: {fileID: 8628065515637349853, guid: d5ae6c76941ce6042870d6842b3b1338,
         type: 3}
       propertyPath: m_Name
@@ -825,7 +819,7 @@ PrefabInstance:
         type: 3}
       propertyPath: collectSound
       value: 
-      objectReference: {fileID: 562284834}
+      objectReference: {fileID: 3216164828327402864}
     - target: {fileID: 8628065515637349853, guid: d5ae6c76941ce6042870d6842b3b1338,
         type: 3}
       propertyPath: m_Name
@@ -1487,6 +1481,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d5e0f2b029910f04db02990cb0b32692, type: 3}
+--- !u!82 &3216164828327402864 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 4351918876158810622, guid: d5e0f2b029910f04db02990cb0b32692,
+    type: 3}
+  m_PrefabInstance: {fileID: 3216164828327402863}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &3450724835305085279
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1720,7 +1720,7 @@ PrefabInstance:
         type: 3}
       propertyPath: collectSound
       value: 
-      objectReference: {fileID: 562284834}
+      objectReference: {fileID: 3216164828327402864}
     - target: {fileID: 8628065515637349853, guid: d5ae6c76941ce6042870d6842b3b1338,
         type: 3}
       propertyPath: m_Name
