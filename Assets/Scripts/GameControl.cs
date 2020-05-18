@@ -15,7 +15,10 @@ public class GameControl : MonoBehaviour
             gameControl = this;
             PlayerStatistic.Source().LoadFromFileIfExist();
         }
-        else if (gameControl != this) Destroy(this);
+        else if (gameControl != this)
+        {
+            Destroy(this);
+        }
     }
 
     private void OnApplicationQuit()
@@ -45,6 +48,11 @@ public class PlayerStatistic
     public void IncreaseScore(int value)
     {
         Scores += value;
+    }
+
+    public void ResetScoreForLevel()
+    {
+        Scores = 0;
     }
 
     public void LoadFromFileIfExist()

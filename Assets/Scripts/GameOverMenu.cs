@@ -26,6 +26,7 @@ public class GameOverMenu : MonoBehaviour
 
     public void RestartGame()
     {
+        PlayerStatistic.Source().ResetScoreForLevel();
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
