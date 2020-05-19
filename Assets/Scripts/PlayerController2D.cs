@@ -8,6 +8,15 @@ public class PlayerController2D : MonoBehaviour
     private float moveX;
     public float speed = 20.0f;
 
+    private void Awake()
+    {
+        if (PlayerCustomization.usedAnimatorController)
+        {
+            var usedAnimationParameters = gameObject.GetComponent<Animator>();
+            usedAnimationParameters.runtimeAnimatorController = PlayerCustomization.usedAnimatorController;
+        }
+    }
+
     private void Update()
     {
         moveX = Input.GetAxis("Horizontal") * speed;

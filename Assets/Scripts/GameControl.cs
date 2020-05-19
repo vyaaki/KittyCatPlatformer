@@ -1,6 +1,7 @@
 ﻿using System;
 using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
+using UnityEditor.Animations;
 using UnityEngine;
 
 public class GameControl : MonoBehaviour
@@ -24,6 +25,18 @@ public class GameControl : MonoBehaviour
     private void OnApplicationQuit()
     {
         PlayerStatistic.Source().SaveData();
+    }
+}
+
+public class PlayerCustomization
+{
+    private static PlayerCustomization source;
+
+    public static AnimatorController usedAnimatorController;
+
+    public static PlayerCustomization Source()
+    {
+        return source ?? (source = new PlayerCustomization());
     }
 }
 

@@ -1112,6 +1112,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: KittyHeadPlayer
       objectReference: {fileID: 0}
+    - target: {fileID: 195358242239806309, guid: c6066758674bd6448adeb774b79bdb6a,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: e057750e289f08b40bf00cb093c3b2c1, type: 2}
     - target: {fileID: 195358242239806311, guid: c6066758674bd6448adeb774b79bdb6a,
         type: 3}
       propertyPath: m_LocalPosition.x
