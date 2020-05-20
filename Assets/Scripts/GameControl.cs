@@ -3,28 +3,40 @@ using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
 using UnityEditor.Animations;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameControl : MonoBehaviour
 {
-    private GameControl gameControl;
+    public static GameControl gameControl;
 
     private void Awake()
     {
         if (gameControl == null)
         {
-            DontDestroyOnLoad(gameObject);
             gameControl = this;
             PlayerStatistic.Source().LoadFromFileIfExist();
         }
-        else if (gameControl != this)
+        else if (gameControl != null)
         {
-            Destroy(this);
+            Destroy(gameObject);
         }
+
+        DontDestroyOnLoad(gameObject);
     }
 
     private void OnApplicationQuit()
     {
         PlayerStatistic.Source().SaveData();
+    }
+
+    private void OnEnable()
+    {
+        SceneManager.sceneLoaded += OnSceneLoaded;
+    }
+
+    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        if (scene.buildIndex > 0) PlayerStatistic.Source().ResetScoreForLevel();
     }
 }
 
@@ -51,6 +63,7 @@ public class PlayerStatistic
     {
     }
 
+    public int LevelScores { get; private set; }
     public int Scores { get; private set; }
 
     public static PlayerStatistic Source()
@@ -58,14 +71,19 @@ public class PlayerStatistic
         return source ?? (source = new PlayerStatistic());
     }
 
-    public void IncreaseScore(int value)
+    public void IncreaseLevelScore(int value)
     {
-        Scores += value;
+        LevelScores += value;
+    }
+
+    public void IncreaseTotalScore()
+    {
+        Scores += LevelScores;
     }
 
     public void ResetScoreForLevel()
     {
-        Scores = 0;
+        LevelScores = 0;
     }
 
     public void LoadFromFileIfExist()

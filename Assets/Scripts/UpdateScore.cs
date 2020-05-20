@@ -7,6 +7,6 @@ public class UpdateScore : MonoBehaviour
 
     private void Update()
     {
-        UIScoreText.GetComponent<Text>().text = "Score:" + PlayerStatistic.Source().Scores;
+        UIScoreText.GetComponent<Text>().text = "Score:" + PlayerStatistic.Source().LevelScores;
     }
 }

@@ -9,6 +9,7 @@ public class FinishLevelEvent : MonoBehaviour
     {
         if (other.gameObject.CompareTag(Tags.Player))
         {
+            PlayerStatistic.Source().IncreaseTotalScore();
             finishPanel.SetActive(true);
             Time.timeScale = 0f;
         }
